@@ -1,0 +1,14 @@
+#Mac Stuff
+.idea/
+
+#Virtual Env
+venv/
+
+#Database
+db.sqlite3
+
+#Migration
+hotel/migrations
+
+#Static Files
+files/
