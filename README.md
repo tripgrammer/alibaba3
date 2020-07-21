@@ -9,9 +9,7 @@ Technologies used in this course are listed below.
 -   [Django 2.2.x](https://www.djangoproject.com/) - Powerful Web Framework
 -   [Gunicorn](https://gunicorn.org/) - WSGI HTTP Server
 -   [PostgreSQL](https://www.postgresql.org/) - PostgreSQL Database
--   [NginX](https://www.nginx.com/) - High performance web server
 -   [Docker](https://www.docker.com/) - Container Platform
--   [ArvanCloud](https://www.arvancloud.com/) - Integrated Cloud Infrastructure
 -   [GitHub](https://github.com/) - Version Control
 
 ##  Installation
@@ -40,11 +38,6 @@ Now run django and postgresql with **docker-compose**.
 ```sh
 $ docker-compose up -d
 ```
-Then run nginx container with **docker-compose**.
-```sh
-$ cd config/nginx/
-$ docker-compose up -d
-```
 You can see alibaba web page on http://localhost, Template and API's are accessable by  docker containers which you can see with below command.
 ```sh
 $ docker ps -a
@@ -52,8 +45,6 @@ $ docker ps -a
 **Output** should be like this.
 ```sh
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                    NAMES
-fc6cc9d6d3d7        nginx_nginx         "nginx -g 'daemon of…"   2 hours ago         Up 2 hours          0.0.0.0:80->80/tcp       nginx
-05103904dcb8        ae80efb17475        "gunicorn --chdir bl…"   2 hours ago         Up 2 hours          0.0.0.0:8000->8000/tcp   alibaba
 4a183e90a9eb        postgres:10         "docker-entrypoint.s…"   2 hours ago         Up 2 hours          0.0.0.0:5432->5432/tcp   alibaba_postgresql
 ```
 **nginx** container as common web server, **alibaba** container as django application and **alibaba_postgresql** as postgreSQL database container.
