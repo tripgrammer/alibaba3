@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="../../static/css/signup.css">
+    <link rel="stylesheet" href="../../static/css/index.css">
+{% endblock %}
+{% block main %}
+    <main id="sign-up" class="bg-gray main-wrapper">
+        <div class="container">
+            <div class="sign-up box">
+                <div class="row">
+                    <div class="col-md-6 col-md-push-1">
+                        <div class="row sign-up-form">
+                            <form action="https://web.archive.org/web/20191226061239/alibaba.ir/signup#"
+                                  method="post" novalidate="novalidate" autocomplete="off"
+                                  class="validated-form">
+                                <div class="col-xs-12">
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group"><label for="email">ایمیل (الزامی)</label> <input
+                                                type="email" dir="ltr" id="email" name="email"
+                                                autofocus="autofocus" value="" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group"><label for="phone">تلفن همراه (الزامی)</label>
+                                            <input type="tel" dir="ltr" id="phone" name="phone" value=""
+                                                   class="form-control"></div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group"><label for="password">رمز عبور (الزامی)</label>
+                                            <input type="password" dir="ltr" id="password" name="password"
+                                                   value="" class="form-control"></div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group"><label for="confirm-password">تکرار رمز عبور
+                                            (الزامی)</label> <input type="password" dir="ltr"
+                                                                    id="confirm-password"
+                                                                    name="confirm-password" value=""
+                                                                    class="form-control"></div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <div><input type="checkbox" id="rules-accepted"> <label
+                                                    for="rules-accepted" class="rules-accepted-sign-up"><span><a
+                                                    href="https://web.archive.org/web/20191226061239/http://alibaba.ir/policy">قوانین و مقررات سفرهای علی‌بابا</a> را می‌پذیرم.</span></label>
+                                            </div>
+                                            <div class="subscribe-news-letter"><input type="checkbox"
+                                                                                      id="subscribe-news">
+                                                <label for="subscribe-news" class="rules-accepted-sign-up">
+                                                    مایل به دریافت خبرنامه و ایمیل‌های علی‌بابا هستم
+                                                </label></div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" id="signup-action-btn"
+                                            class="btn btn-block btn-primary login-form-submit">
+                                        ثبت نام
+                                        <span class="dots" style="display:none;">...</span></button>
+                                </div>
+                            </form>
+                            <div class="col-xs-12 text-center"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

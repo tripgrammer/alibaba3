@@ -26,4 +26,4 @@ class IndexPage(TemplateView):
 
 
 class LoginPage(TemplateView):
-    template_name = "login.html"
+    template_name = "login1.html"
